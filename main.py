@@ -81,7 +81,7 @@ def main(config):
             train_loader = DataLoader(train_ds, batch_size=1, shuffle=True, num_workers=1)
             print(f"Train data fold {i+1} loaded")
             val_loader = DataLoader(val_ds, batch_size=1, num_workers=1)
-            test_loader = DataLoader(test_org_ds, batch_size=1, num_workers=1)
+            test_loader = DataLoader(val_ds, batch_size=1, num_workers=1)
             print("Start training...")
             solver = Trainer(config, train_loader, val_loader, test_loader, fold_dir)
             # Start train
@@ -124,7 +124,7 @@ if __name__ == '__main__':
     parser.add_argument('--image_size', type=int, default=96)
 
     # training hyper-parameters
-    parser.add_argument('--num_epochs', type=int, default=3)
+    parser.add_argument('--num_epochs', type=int, default=20)
     parser.add_argument('--num_epochs_decay', type=int, default=10)
     parser.add_argument('--batch_size', type=int, default=1)
     parser.add_argument('--num_workers', type=int, default=1)
@@ -133,7 +133,7 @@ if __name__ == '__main__':
     parser.add_argument('--model_path', type=str, default='./models')
     parser.add_argument('--result_path', type=str, default='./result/')
     parser.add_argument('--cuda_idx', type=int, default=1)
-    parser.add_argument('--use_k_fold', default=False)
+    parser.add_argument('--use_k_fold', default=True)
     parser.add_argument('--multi_opt', default="GradNorm")
 
     config = parser.parse_args()
