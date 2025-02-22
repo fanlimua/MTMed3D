@@ -259,11 +259,7 @@ train_transforms = Compose(
                 image_keys=["image","seg_label"],
                 box_keys=["box"],
                 label_keys=["box_label"],
-                # spatial_size=(150, 150, 150),
-                # spatial_size=(160, 160, 128),
-                # spatial_size=(128, 128, 128),
                 spatial_size=(96, 96, 96),
-                # spatial_size=(64, 64, 64),
             ),
             RandFlipBoxd(
                 image_keys=["image", "seg_label"],
@@ -320,16 +316,8 @@ val_transforms = Compose(
                 image_keys=["image","seg_label"],
                 box_keys=["box"],
                 label_keys=["box_label"],
-                # spatial_size=(160, 160, 128),
-                # spatial_size=(128, 128, 128),
                 spatial_size=(96, 96, 96),
-                # spatial_size=(64, 64, 64),
             ),
-            # CenterSpatialCropd(
-            #     keys=["image","seg_label"],
-            #     roi_size=(128, 128, 128),
-            #     # roi_size=(160, 160, 128),
-            # ),
             EnsureTyped(keys=["image", "box"], dtype=torch.float32),
             EnsureTyped(keys=["box_label"], dtype=torch.long),
         ]
@@ -415,31 +403,3 @@ post_transforms = Compose(
         SaveImaged(keys="pred", meta_keys="pred_meta_dict", output_dir="./out", output_postfix="seg", resample=False),
     ]
 )
-
-#BraST2018
-data_json_file_path = "/home/fan/project/Medical-image-analysis/utils/data_annotation.json"
-data_dir = "/home/fan/project/dataset/BraTS/imageTr2018"
-seg_label_dir = "/home/fan/project/dataset/BraTS/labelTr2018"
-test_dir = "/home/fan/project/dataset/Task01_BrainTumour/imagesTs"
-
-train_files = load_decathlon_datalist(
-        data_json_file_path,
-        is_segmentation=True,
-        data_list_key="training",
-        base_dir=data_dir,
-        seg_label_dir=seg_label_dir,
-    )
-test_files = load_decathlon_datalist(
-        data_json_file_path,
-        is_segmentation=True,
-        data_list_key="training",
-        base_dir=test_dir,
-        seg_label_dir=seg_label_dir,
-    )
-full_files = load_decathlon_datalist(
-        data_json_file_path,
-        is_segmentation=True,
-        data_list_key="training",
-        base_dir=data_dir,
-        seg_label_dir=seg_label_dir,
-    )

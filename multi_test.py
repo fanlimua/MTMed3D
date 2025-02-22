@@ -4,7 +4,7 @@ import time
 import numpy as np
 import torch
 from lib.data_loader import test_transforms, load_decathlon_datalist, val_transforms
-from lib.data_loader import full_files, train_transforms, val_transforms
+from lib.data_loader import train_transforms, val_transforms, load_decathlon_datalist
 from monai.data import DataLoader, Dataset
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
@@ -682,7 +682,10 @@ def multi_vis(root_dir, result_dir, test_loader, fold_name, model, task_manager,
 if __name__ == "__main__":
     # Argument parser
     parser = argparse.ArgumentParser(description="Multi-task model testing.")
-    parser.add_argument("--root_dir", type=str, default="/home/fan/project/Medical-image-analysis/models/Dense_PANet_GradNorm", help="Directory containing model weights.")
+    parser.add_argument('--json_file', type=str, default='../Medical-image-analysis/utils/data_annotation.json')
+    parser.add_argument('--data_dir', type=str, default='../dataset/BraTS/imageTr2018')
+    parser.add_argument('--seg_label_dir', type=str, default='../dataset/BraTS/labelTr2018')
+    parser.add_argument("--root_dir", type=str, default="../Medical-image-analysis/models/Dense_PANet_GradNorm", help="Directory containing model weights.")
     parser.add_argument("--result_dir", type=str, default="./result/test_multi", help="Directory for saving results.")
     parser.add_argument("--mode", type=str, default="testing", help="'testing' for validating model performance metrics, or 'efficiency' for evaluating resource usage and runtime performance, or 'vis' for visulization.")
     parser.add_argument("--multi_opt", type=str, default="GradNorm", help="Traning Optimizer")
@@ -690,6 +693,15 @@ if __name__ == "__main__":
     
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model, task_manager = ini_models(device)
+    
+    #BraST2018
+    full_files = load_decathlon_datalist(
+            args.json_file,
+            is_segmentation=True,
+            data_list_key="training",
+            base_dir=args.data_dir,
+            seg_label_dir=args.seg_label_dir,
+        )
     
     if args.mode == "testing":
         kf = KFold(n_splits=5, shuffle=True, random_state=42)

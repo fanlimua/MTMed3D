@@ -2,7 +2,7 @@ import argparse
 import os
 import time
 from train import Trainer
-from lib.data_loader import full_files, train_transforms, val_transforms
+from lib.data_loader import train_transforms, val_transforms, load_decathlon_datalist
 from monai.data import CacheDataset, DataLoader
 from torch.backends import cudnn
 import random
@@ -44,6 +44,15 @@ def main(config):
     if not os.path.exists(root_dir):
         os.mkdir(root_dir)
     g = open(os.path.join(root_dir, 'fold_indices.txt'), 'a+')
+    
+    #BraST2018
+    full_files = load_decathlon_datalist(
+            config.json_file,
+            is_segmentation=True,
+            data_list_key="training",
+            base_dir=config.data_dir,
+            seg_label_dir=config.seg_label_dir,
+        )
 
     #Utilize K Fold Cross Validation
     if config.use_k_fold:
@@ -124,17 +133,20 @@ if __name__ == '__main__':
     parser.add_argument('--image_size', type=int, default=96)
 
     # training hyper-parameters
+    parser.add_argument('--json_file', type=str, default='../Medical-image-analysis/utils/data_annotation.json')
+    parser.add_argument('--data_dir', type=str, default='../dataset/BraTS/imageTr2018')
+    parser.add_argument('--seg_label_dir', type=str, default='../dataset/BraTS/labelTr2018')
     parser.add_argument('--num_epochs', type=int, default=20)
     parser.add_argument('--num_epochs_decay', type=int, default=10)
     parser.add_argument('--batch_size', type=int, default=1)
     parser.add_argument('--num_workers', type=int, default=1)
     parser.add_argument('--mode', type=str, default='train')
-    parser.add_argument('--task', type=str, default='multi')
+    parser.add_argument('--task', type=str, default='multi', help="Specify the type of training. Options: segmentation(single-task), detection(single-task), classification(single-task), multi(multi-task).")
     parser.add_argument('--model_path', type=str, default='./models')
     parser.add_argument('--result_path', type=str, default='./result/')
     parser.add_argument('--cuda_idx', type=int, default=1)
-    parser.add_argument('--use_k_fold', default=True)
-    parser.add_argument('--multi_opt', default="GradNorm")
+    parser.add_argument('--use_k_fold', default=True, help="Enable k-fold cross-validation. Default is True.")
+    parser.add_argument('--multi_opt', default="GradNorm", help="Optimization strategy for multi-task learning. Options: 'GradNorm', 'MGDA'")
 
     config = parser.parse_args()
     main(config)
