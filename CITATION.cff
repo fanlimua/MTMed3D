@@ -1,0 +1,25 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  MultiSwin: A Swin Transformer-Based Multi-Task Model for
+  Medical Imaging
+message: multiswin2025
+type: dataset
+authors:
+  - given-names: Fan
+    family-names: Li
+    email: fanli@oakland.edu
+identifiers:
+  - type: url
+    value: 'https://github.com/fanlimua/MultiSwin.git'
+repository-code: 'https://github.com/fanlimua/MultiSwin.git'
+keywords:
+  - Multi-task Model
+  - Swin Transformer
+  - Segmentation
+  - Detection
+  - Classification
+  - Medical Image
+date-released: '2025-02-02'
