@@ -1,0 +1,5704 @@
+{
+  "training": [
+    {
+      "box": [
+        [
+          127,
+          70,
+          44,
+          186,
+          154,
+          101
+        ]
+      ],
+      "image": "Brats18_TCIA12_298_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA12_298_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          118,
+          111,
+          26,
+          173,
+          176,
+          91
+        ]
+      ],
+      "image": "Brats18_TCIA13_618_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA13_618_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          96,
+          91,
+          29,
+          175,
+          194,
+          104
+        ]
+      ],
+      "image": "Brats18_TCIA10_625_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_625_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          65,
+          70,
+          31,
+          119,
+          144,
+          81
+        ]
+      ],
+      "image": "Brats18_TCIA04_149_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA04_149_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          76,
+          38,
+          60,
+          127,
+          115,
+          124
+        ]
+      ],
+      "image": "Brats18_TCIA08_162_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA08_162_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          156,
+          81,
+          24,
+          189,
+          151,
+          70
+        ]
+      ],
+      "image": "Brats18_CBICA_BHB_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_BHB_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          57,
+          33,
+          41,
+          123,
+          122,
+          127
+        ]
+      ],
+      "image": "Brats18_CBICA_AXL_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AXL_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          91,
+          145,
+          60,
+          121,
+          185,
+          119
+        ]
+      ],
+      "image": "Brats18_TCIA10_266_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_266_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          52,
+          60,
+          58,
+          87,
+          96,
+          99
+        ]
+      ],
+      "image": "Brats18_TCIA12_470_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA12_470_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          115,
+          26,
+          37,
+          188,
+          137,
+          112
+        ]
+      ],
+      "image": "Brats18_2013_14_1_HGG.nii.gz",
+      "seg_label": "Brats18_2013_14_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          66,
+          104,
+          29,
+          137,
+          187,
+          104
+        ]
+      ],
+      "image": "Brats18_TCIA05_444_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA05_444_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          110,
+          38,
+          25,
+          178,
+          101,
+          114
+        ]
+      ],
+      "image": "Brats18_TCIA01_335_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA01_335_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          135,
+          39,
+          36,
+          188,
+          124,
+          91
+        ]
+      ],
+      "image": "Brats18_CBICA_BFB_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_BFB_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          59,
+          69,
+          37,
+          115,
+          158,
+          115
+        ]
+      ],
+      "image": "Brats18_CBICA_AMH_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AMH_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          91,
+          55,
+          43,
+          150,
+          166,
+          87
+        ]
+      ],
+      "image": "Brats18_CBICA_ATX_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_ATX_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          53,
+          47,
+          47,
+          127,
+          142,
+          132
+        ]
+      ],
+      "image": "Brats18_TCIA02_222_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA02_222_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          152,
+          102,
+          39,
+          186,
+          149,
+          74
+        ]
+      ],
+      "image": "Brats18_TCIA02_322_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA02_322_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          121,
+          51,
+          56,
+          182,
+          141,
+          135
+        ]
+      ],
+      "image": "Brats18_CBICA_ANG_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_ANG_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          56,
+          60,
+          33,
+          146,
+          166,
+          89
+        ]
+      ],
+      "image": "Brats18_TCIA04_343_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA04_343_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          51,
+          46,
+          29,
+          113,
+          142,
+          113
+        ]
+      ],
+      "image": "Brats18_TCIA08_167_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA08_167_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          116,
+          78,
+          67,
+          175,
+          147,
+          130
+        ]
+      ],
+      "image": "Brats18_TCIA02_430_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA02_430_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          51,
+          60,
+          40,
+          110,
+          143,
+          118
+        ]
+      ],
+      "image": "Brats18_CBICA_ANI_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_ANI_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          137,
+          53,
+          26,
+          188,
+          146,
+          89
+        ]
+      ],
+      "image": "Brats18_CBICA_AME_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AME_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          121,
+          57,
+          39,
+          187,
+          150,
+          98
+        ]
+      ],
+      "image": "Brats18_2013_3_1_HGG.nii.gz",
+      "seg_label": "Brats18_2013_3_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          60,
+          107,
+          69,
+          103,
+          153,
+          121
+        ]
+      ],
+      "image": "Brats18_CBICA_AYW_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AYW_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          123,
+          29,
+          25,
+          190,
+          107,
+          107
+        ]
+      ],
+      "image": "Brats18_CBICA_AQZ_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AQZ_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          59,
+          33,
+          54,
+          120,
+          109,
+          130
+        ]
+      ],
+      "image": "Brats18_TCIA10_413_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_413_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          56,
+          54,
+          39,
+          111,
+          121,
+          94
+        ]
+      ],
+      "image": "Brats18_TCIA08_278_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA08_278_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          134,
+          107,
+          32,
+          181,
+          156,
+          85
+        ]
+      ],
+      "image": "Brats18_TCIA02_171_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA02_171_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          122,
+          72,
+          71,
+          178,
+          146,
+          139
+        ]
+      ],
+      "image": "Brats18_TCIA01_221_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA01_221_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          97,
+          64,
+          69,
+          159,
+          159,
+          126
+        ]
+      ],
+      "image": "Brats18_2013_2_1_HGG.nii.gz",
+      "seg_label": "Brats18_2013_2_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          133,
+          81,
+          87,
+          161,
+          114,
+          122
+        ]
+      ],
+      "image": "Brats18_2013_26_1_HGG.nii.gz",
+      "seg_label": "Brats18_2013_26_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          123,
+          80,
+          47,
+          185,
+          147,
+          135
+        ]
+      ],
+      "image": "Brats18_CBICA_AVJ_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AVJ_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          72,
+          78,
+          74,
+          163,
+          149,
+          134
+        ]
+      ],
+      "image": "Brats18_CBICA_APR_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_APR_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          126,
+          31,
+          59,
+          186,
+          117,
+          134
+        ]
+      ],
+      "image": "Brats18_2013_19_1_HGG.nii.gz",
+      "seg_label": "Brats18_2013_19_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          62,
+          45,
+          26,
+          127,
+          162,
+          114
+        ]
+      ],
+      "image": "Brats18_TCIA02_314_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA02_314_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          84,
+          100,
+          82,
+          138,
+          174,
+          134
+        ]
+      ],
+      "image": "Brats18_TCIA04_479_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA04_479_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          102,
+          54,
+          26,
+          190,
+          154,
+          88
+        ]
+      ],
+      "image": "Brats18_CBICA_AQQ_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AQQ_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          110,
+          107,
+          65,
+          173,
+          182,
+          132
+        ]
+      ],
+      "image": "Brats18_TCIA08_113_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA08_113_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          68,
+          98,
+          62,
+          113,
+          157,
+          116
+        ]
+      ],
+      "image": "Brats18_TCIA02_198_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA02_198_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          59,
+          42,
+          28,
+          154,
+          175,
+          111
+        ]
+      ],
+      "image": "Brats18_TCIA09_255_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA09_255_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          48,
+          74,
+          31,
+          100,
+          154,
+          83
+        ]
+      ],
+      "image": "Brats18_2013_28_1_LGG.nii.gz",
+      "seg_label": "Brats18_2013_28_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          65,
+          91,
+          35,
+          118,
+          151,
+          89
+        ]
+      ],
+      "image": "Brats18_TCIA13_630_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA13_630_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          61,
+          109,
+          46,
+          131,
+          188,
+          117
+        ]
+      ],
+      "image": "Brats18_2013_23_1_HGG.nii.gz",
+      "seg_label": "Brats18_2013_23_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          111,
+          83,
+          30,
+          176,
+          192,
+          108
+        ]
+      ],
+      "image": "Brats18_CBICA_APY_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_APY_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          59,
+          82,
+          60,
+          121,
+          153,
+          132
+        ]
+      ],
+      "image": "Brats18_2013_21_1_HGG.nii.gz",
+      "seg_label": "Brats18_2013_21_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          133,
+          75,
+          28,
+          189,
+          156,
+          100
+        ]
+      ],
+      "image": "Brats18_TCIA10_442_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_442_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          115,
+          47,
+          48,
+          175,
+          119,
+          127
+        ]
+      ],
+      "image": "Brats18_CBICA_ASA_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_ASA_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          75,
+          100,
+          74,
+          124,
+          180,
+          140
+        ]
+      ],
+      "image": "Brats18_CBICA_AQP_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AQP_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          90,
+          32,
+          30,
+          185,
+          155,
+          110
+        ]
+      ],
+      "image": "Brats18_CBICA_ABO_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_ABO_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          131,
+          50,
+          67,
+          178,
+          133,
+          124
+        ]
+      ],
+      "image": "Brats18_CBICA_ABY_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_ABY_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          59,
+          50,
+          34,
+          107,
+          143,
+          93
+        ]
+      ],
+      "image": "Brats18_CBICA_ATV_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_ATV_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          102,
+          97,
+          70,
+          156,
+          157,
+          134
+        ]
+      ],
+      "image": "Brats18_CBICA_ARZ_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_ARZ_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          109,
+          44,
+          67,
+          166,
+          144,
+          138
+        ]
+      ],
+      "image": "Brats18_CBICA_ATB_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_ATB_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          56,
+          89,
+          25,
+          117,
+          159,
+          81
+        ]
+      ],
+      "image": "Brats18_TCIA12_249_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA12_249_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          57,
+          67,
+          23,
+          133,
+          164,
+          99
+        ]
+      ],
+      "image": "Brats18_TCIA06_211_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA06_211_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          115,
+          48,
+          30,
+          187,
+          159,
+          121
+        ]
+      ],
+      "image": "Brats18_TCIA01_401_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA01_401_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          106,
+          36,
+          60,
+          182,
+          139,
+          138
+        ]
+      ],
+      "image": "Brats18_TCIA03_474_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA03_474_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          133,
+          86,
+          23,
+          184,
+          159,
+          74
+        ]
+      ],
+      "image": "Brats18_CBICA_ABN_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_ABN_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          74,
+          83,
+          25,
+          120,
+          163,
+          84
+        ]
+      ],
+      "image": "Brats18_CBICA_ASE_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_ASE_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          51,
+          97,
+          29,
+          108,
+          155,
+          76
+        ]
+      ],
+      "image": "Brats18_TCIA01_425_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA01_425_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          59,
+          38,
+          54,
+          114,
+          116,
+          121
+        ]
+      ],
+      "image": "Brats18_CBICA_AAP_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AAP_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          64,
+          44,
+          70,
+          106,
+          91,
+          110
+        ]
+      ],
+      "image": "Brats18_2013_13_1_HGG.nii.gz",
+      "seg_label": "Brats18_2013_13_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          60,
+          79,
+          23,
+          110,
+          155,
+          72
+        ]
+      ],
+      "image": "Brats18_TCIA06_247_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA06_247_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          129,
+          39,
+          45,
+          182,
+          131,
+          132
+        ]
+      ],
+      "image": "Brats18_CBICA_AQU_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AQU_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          76,
+          39,
+          52,
+          138,
+          113,
+          101
+        ]
+      ],
+      "image": "Brats18_CBICA_AWG_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AWG_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          63,
+          109,
+          41,
+          138,
+          200,
+          120
+        ]
+      ],
+      "image": "Brats18_TCIA08_469_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA08_469_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          66,
+          109,
+          55,
+          158,
+          197,
+          135
+        ]
+      ],
+      "image": "Brats18_2013_17_1_HGG.nii.gz",
+      "seg_label": "Brats18_2013_17_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          128,
+          64,
+          33,
+          187,
+          151,
+          91
+        ]
+      ],
+      "image": "Brats18_TCIA02_370_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA02_370_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          99,
+          89,
+          60,
+          177,
+          189,
+          129
+        ]
+      ],
+      "image": "Brats18_TCIA05_478_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA05_478_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          106,
+          52,
+          60,
+          181,
+          137,
+          131
+        ]
+      ],
+      "image": "Brats18_TCIA06_409_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA06_409_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          52,
+          34,
+          41,
+          120,
+          189,
+          137
+        ]
+      ],
+      "image": "Brats18_2013_4_1_HGG.nii.gz",
+      "seg_label": "Brats18_2013_4_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          129,
+          40,
+          54,
+          182,
+          128,
+          123
+        ]
+      ],
+      "image": "Brats18_TCIA04_361_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA04_361_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          55,
+          60,
+          34,
+          115,
+          132,
+          95
+        ]
+      ],
+      "image": "Brats18_CBICA_AZH_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AZH_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          123,
+          43,
+          15,
+          189,
+          180,
+          94
+        ]
+      ],
+      "image": "Brats18_CBICA_AOD_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AOD_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          107,
+          66,
+          15,
+          141,
+          103,
+          49
+        ]
+      ],
+      "image": "Brats18_TCIA13_650_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA13_650_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          87,
+          116,
+          96,
+          120,
+          176,
+          136
+        ]
+      ],
+      "image": "Brats18_2013_15_1_LGG.nii.gz",
+      "seg_label": "Brats18_2013_15_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          62,
+          64,
+          58,
+          118,
+          117,
+          109
+        ]
+      ],
+      "image": "Brats18_CBICA_AQV_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AQV_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          56,
+          64,
+          32,
+          110,
+          141,
+          75
+        ]
+      ],
+      "image": "Brats18_TCIA13_621_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA13_621_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          67,
+          109,
+          86,
+          116,
+          170,
+          135
+        ]
+      ],
+      "image": "Brats18_TCIA13_653_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA13_653_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          80,
+          68,
+          43,
+          177,
+          191,
+          126
+        ]
+      ],
+      "image": "Brats18_TCIA10_637_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_637_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          82,
+          97,
+          45,
+          151,
+          189,
+          129
+        ]
+      ],
+      "image": "Brats18_TCIA10_644_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_644_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          85,
+          46,
+          48,
+          164,
+          124,
+          103
+        ]
+      ],
+      "image": "Brats18_CBICA_ANP_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_ANP_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          124,
+          70,
+          27,
+          184,
+          159,
+          81
+        ]
+      ],
+      "image": "Brats18_CBICA_AAG_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AAG_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          68,
+          86,
+          56,
+          141,
+          196,
+          137
+        ]
+      ],
+      "image": "Brats18_CBICA_AXJ_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AXJ_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          108,
+          42,
+          30,
+          190,
+          157,
+          104
+        ]
+      ],
+      "image": "Brats18_TCIA13_623_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA13_623_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          96,
+          53,
+          30,
+          188,
+          162,
+          112
+        ]
+      ],
+      "image": "Brats18_CBICA_AAB_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AAB_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          65,
+          51,
+          66,
+          142,
+          138,
+          126
+        ]
+      ],
+      "image": "Brats18_CBICA_AOP_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AOP_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          123,
+          39,
+          37,
+          186,
+          114,
+          108
+        ]
+      ],
+      "image": "Brats18_TCIA09_493_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA09_493_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          133,
+          76,
+          74,
+          172,
+          119,
+          126
+        ]
+      ],
+      "image": "Brats18_TCIA03_133_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA03_133_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          68,
+          87,
+          54,
+          112,
+          146,
+          109
+        ]
+      ],
+      "image": "Brats18_2013_24_1_LGG.nii.gz",
+      "seg_label": "Brats18_2013_24_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          66,
+          119,
+          30,
+          159,
+          210,
+          100
+        ]
+      ],
+      "image": "Brats18_CBICA_AQY_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AQY_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          57,
+          57,
+          40,
+          107,
+          157,
+          102
+        ]
+      ],
+      "image": "Brats18_TCIA03_498_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA03_498_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          56,
+          76,
+          28,
+          124,
+          158,
+          103
+        ]
+      ],
+      "image": "Brats18_CBICA_APZ_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_APZ_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          128,
+          68,
+          29,
+          182,
+          163,
+          102
+        ]
+      ],
+      "image": "Brats18_2013_10_1_HGG.nii.gz",
+      "seg_label": "Brats18_2013_10_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          63,
+          87,
+          59,
+          135,
+          186,
+          134
+        ]
+      ],
+      "image": "Brats18_CBICA_ABE_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_ABE_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          57,
+          52,
+          32,
+          119,
+          160,
+          103
+        ]
+      ],
+      "image": "Brats18_TCIA03_419_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA03_419_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          117,
+          57,
+          80,
+          160,
+          112,
+          136
+        ]
+      ],
+      "image": "Brats18_TCIA10_299_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_299_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          134,
+          75,
+          67,
+          177,
+          142,
+          111
+        ]
+      ],
+      "image": "Brats18_TCIA01_190_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA01_190_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          59,
+          56,
+          58,
+          114,
+          119,
+          109
+        ]
+      ],
+      "image": "Brats18_CBICA_AAL_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AAL_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          60,
+          66,
+          63,
+          111,
+          124,
+          113
+        ]
+      ],
+      "image": "Brats18_CBICA_AXM_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AXM_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          68,
+          75,
+          74,
+          131,
+          169,
+          139
+        ]
+      ],
+      "image": "Brats18_2013_7_1_HGG.nii.gz",
+      "seg_label": "Brats18_2013_7_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          107,
+          57,
+          33,
+          177,
+          182,
+          110
+        ]
+      ],
+      "image": "Brats18_TCIA10_202_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_202_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          55,
+          32,
+          54,
+          123,
+          122,
+          130
+        ]
+      ],
+      "image": "Brats18_TCIA13_642_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA13_642_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          57,
+          33,
+          43,
+          127,
+          123,
+          132
+        ]
+      ],
+      "image": "Brats18_TCIA02_368_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA02_368_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          92,
+          30,
+          36,
+          177,
+          106,
+          120
+        ]
+      ],
+      "image": "Brats18_TCIA08_105_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA08_105_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          98,
+          74,
+          62,
+          169,
+          171,
+          136
+        ]
+      ],
+      "image": "Brats18_TCIA10_639_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_639_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          71,
+          31,
+          38,
+          120,
+          102,
+          122
+        ]
+      ],
+      "image": "Brats18_TCIA02_331_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA02_331_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          127,
+          45,
+          36,
+          188,
+          127,
+          107
+        ]
+      ],
+      "image": "Brats18_CBICA_ASN_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_ASN_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          64,
+          75,
+          30,
+          116,
+          147,
+          73
+        ]
+      ],
+      "image": "Brats18_TCIA09_177_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA09_177_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          102,
+          108,
+          54,
+          174,
+          198,
+          135
+        ]
+      ],
+      "image": "Brats18_TCIA03_199_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA03_199_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          63,
+          64,
+          55,
+          142,
+          190,
+          136
+        ]
+      ],
+      "image": "Brats18_TCIA10_351_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_351_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          65,
+          112,
+          88,
+          99,
+          151,
+          131
+        ]
+      ],
+      "image": "Brats18_2013_25_1_HGG.nii.gz",
+      "seg_label": "Brats18_2013_25_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          111,
+          48,
+          29,
+          185,
+          156,
+          106
+        ]
+      ],
+      "image": "Brats18_TCIA09_254_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA09_254_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          99,
+          120,
+          55,
+          172,
+          192,
+          117
+        ]
+      ],
+      "image": "Brats18_TCIA08_436_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA08_436_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          83,
+          124,
+          75,
+          123,
+          194,
+          132
+        ]
+      ],
+      "image": "Brats18_TCIA10_420_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_420_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          59,
+          76,
+          30,
+          122,
+          162,
+          97
+        ]
+      ],
+      "image": "Brats18_TCIA03_138_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA03_138_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          115,
+          70,
+          26,
+          186,
+          154,
+          99
+        ]
+      ],
+      "image": "Brats18_TCIA02_117_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA02_117_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          110,
+          38,
+          37,
+          188,
+          144,
+          108
+        ]
+      ],
+      "image": "Brats18_TCIA02_377_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA02_377_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          101,
+          77,
+          35,
+          180,
+          177,
+          125
+        ]
+      ],
+      "image": "Brats18_TCIA10_109_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_109_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          94,
+          91,
+          58,
+          185,
+          189,
+          133
+        ]
+      ],
+      "image": "Brats18_TCIA10_261_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_261_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          57,
+          45,
+          26,
+          131,
+          157,
+          98
+        ]
+      ],
+      "image": "Brats18_TCIA10_628_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_628_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          93,
+          88,
+          81,
+          155,
+          172,
+          131
+        ]
+      ],
+      "image": "Brats18_CBICA_AOH_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AOH_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          65,
+          88,
+          85,
+          103,
+          131,
+          128
+        ]
+      ],
+      "image": "Brats18_TCIA10_632_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_632_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          111,
+          39,
+          35,
+          188,
+          147,
+          113
+        ]
+      ],
+      "image": "Brats18_TCIA06_332_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA06_332_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          120,
+          33,
+          57,
+          183,
+          112,
+          138
+        ]
+      ],
+      "image": "Brats18_TCIA09_402_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA09_402_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          123,
+          64,
+          31,
+          176,
+          141,
+          89
+        ]
+      ],
+      "image": "Brats18_TCIA10_330_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_330_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          128,
+          63,
+          40,
+          160,
+          101,
+          71
+        ]
+      ],
+      "image": "Brats18_TCIA01_411_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA01_411_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          64,
+          88,
+          51,
+          147,
+          188,
+          128
+        ]
+      ],
+      "image": "Brats18_TCIA02_274_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA02_274_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          117,
+          105,
+          64,
+          178,
+          181,
+          131
+        ]
+      ],
+      "image": "Brats18_TCIA02_168_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA02_168_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          65,
+          93,
+          31,
+          135,
+          187,
+          124
+        ]
+      ],
+      "image": "Brats18_CBICA_AXO_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AXO_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          122,
+          83,
+          33,
+          184,
+          164,
+          136
+        ]
+      ],
+      "image": "Brats18_CBICA_AWI_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AWI_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          82,
+          37,
+          58,
+          180,
+          122,
+          139
+        ]
+      ],
+      "image": "Brats18_2013_18_1_HGG.nii.gz",
+      "seg_label": "Brats18_2013_18_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          56,
+          60,
+          33,
+          133,
+          164,
+          102
+        ]
+      ],
+      "image": "Brats18_TCIA06_184_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA06_184_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          119,
+          111,
+          96,
+          157,
+          156,
+          134
+        ]
+      ],
+      "image": "Brats18_TCIA10_130_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_130_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          71,
+          42,
+          52,
+          121,
+          113,
+          134
+        ]
+      ],
+      "image": "Brats18_TCIA02_151_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA02_151_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          56,
+          50,
+          60,
+          115,
+          143,
+          134
+        ]
+      ],
+      "image": "Brats18_TCIA01_390_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA01_390_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          56,
+          38,
+          31,
+          114,
+          122,
+          119
+        ]
+      ],
+      "image": "Brats18_CBICA_AOZ_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AOZ_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          130,
+          58,
+          48,
+          183,
+          123,
+          116
+        ]
+      ],
+      "image": "Brats18_TCIA08_234_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA08_234_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          134,
+          90,
+          43,
+          174,
+          145,
+          93
+        ]
+      ],
+      "image": "Brats18_TCIA02_473_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA02_473_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          52,
+          63,
+          35,
+          99,
+          132,
+          88
+        ]
+      ],
+      "image": "Brats18_CBICA_ABM_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_ABM_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          53,
+          76,
+          36,
+          92,
+          151,
+          90
+        ]
+      ],
+      "image": "Brats18_CBICA_ALU_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_ALU_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          71,
+          35,
+          49,
+          128,
+          118,
+          126
+        ]
+      ],
+      "image": "Brats18_TCIA13_615_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA13_615_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          60,
+          33,
+          32,
+          119,
+          103,
+          103
+        ]
+      ],
+      "image": "Brats18_TCIA02_608_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA02_608_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          56,
+          73,
+          37,
+          106,
+          153,
+          88
+        ]
+      ],
+      "image": "Brats18_CBICA_AXW_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AXW_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          59,
+          101,
+          59,
+          102,
+          149,
+          108
+        ]
+      ],
+      "image": "Brats18_TCIA09_428_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA09_428_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          85,
+          72,
+          53,
+          119,
+          140,
+          129
+        ]
+      ],
+      "image": "Brats18_TCIA01_131_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA01_131_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          63,
+          86,
+          59,
+          141,
+          191,
+          142
+        ]
+      ],
+      "image": "Brats18_2013_20_1_HGG.nii.gz",
+      "seg_label": "Brats18_2013_20_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          73,
+          38,
+          63,
+          123,
+          107,
+          130
+        ]
+      ],
+      "image": "Brats18_CBICA_ARF_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_ARF_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          121,
+          46,
+          33,
+          185,
+          149,
+          99
+        ]
+      ],
+      "image": "Brats18_TCIA13_624_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA13_624_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          116,
+          38,
+          29,
+          180,
+          126,
+          122
+        ]
+      ],
+      "image": "Brats18_TCIA05_277_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA05_277_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          133,
+          55,
+          47,
+          182,
+          142,
+          111
+        ]
+      ],
+      "image": "Brats18_CBICA_AQD_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AQD_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          65,
+          88,
+          43,
+          124,
+          167,
+          118
+        ]
+      ],
+      "image": "Brats18_2013_11_1_HGG.nii.gz",
+      "seg_label": "Brats18_2013_11_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          110,
+          60,
+          48,
+          177,
+          151,
+          129
+        ]
+      ],
+      "image": "Brats18_TCIA09_462_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA09_462_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          109,
+          79,
+          35,
+          162,
+          130,
+          82
+        ]
+      ],
+      "image": "Brats18_2013_0_1_LGG.nii.gz",
+      "seg_label": "Brats18_2013_0_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          93,
+          38,
+          72,
+          122,
+          98,
+          132
+        ]
+      ],
+      "image": "Brats18_CBICA_BFP_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_BFP_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          64,
+          42,
+          28,
+          110,
+          141,
+          85
+        ]
+      ],
+      "image": "Brats18_TCIA02_605_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA02_605_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          94,
+          51,
+          56,
+          121,
+          90,
+          101
+        ]
+      ],
+      "image": "Brats18_CBICA_AUQ_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AUQ_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          123,
+          42,
+          70,
+          173,
+          97,
+          127
+        ]
+      ],
+      "image": "Brats18_CBICA_ASU_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_ASU_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          110,
+          38,
+          45,
+          183,
+          154,
+          122
+        ]
+      ],
+      "image": "Brats18_TCIA02_283_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA02_283_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          67,
+          35,
+          39,
+          173,
+          181,
+          133
+        ]
+      ],
+      "image": "Brats18_CBICA_AWH_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AWH_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          51,
+          76,
+          33,
+          106,
+          155,
+          89
+        ]
+      ],
+      "image": "Brats18_2013_27_1_HGG.nii.gz",
+      "seg_label": "Brats18_2013_27_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          69,
+          49,
+          86,
+          162,
+          168,
+          142
+        ]
+      ],
+      "image": "Brats18_TCIA12_466_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA12_466_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          55,
+          61,
+          35,
+          107,
+          121,
+          79
+        ]
+      ],
+      "image": "Brats18_TCIA01_499_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA01_499_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          57,
+          50,
+          37,
+          117,
+          178,
+          104
+        ]
+      ],
+      "image": "Brats18_TCIA02_321_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA02_321_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          57,
+          66,
+          28,
+          117,
+          194,
+          97
+        ]
+      ],
+      "image": "Brats18_TCIA02_179_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA02_179_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          55,
+          77,
+          71,
+          96,
+          116,
+          108
+        ]
+      ],
+      "image": "Brats18_CBICA_AQR_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AQR_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          59,
+          84,
+          42,
+          110,
+          147,
+          100
+        ]
+      ],
+      "image": "Brats18_TCIA02_226_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA02_226_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          54,
+          24,
+          40,
+          105,
+          91,
+          109
+        ]
+      ],
+      "image": "Brats18_TCIA09_620_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA09_620_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          61,
+          66,
+          29,
+          123,
+          155,
+          102
+        ]
+      ],
+      "image": "Brats18_TCIA06_165_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA06_165_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          53,
+          52,
+          54,
+          93,
+          106,
+          95
+        ]
+      ],
+      "image": "Brats18_CBICA_BHK_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_BHK_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          106,
+          78,
+          30,
+          184,
+          167,
+          105
+        ]
+      ],
+      "image": "Brats18_TCIA05_396_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA05_396_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          140,
+          67,
+          22,
+          188,
+          144,
+          77
+        ]
+      ],
+      "image": "Brats18_TCIA10_408_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_408_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          125,
+          94,
+          30,
+          165,
+          156,
+          74
+        ]
+      ],
+      "image": "Brats18_TCIA10_310_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_310_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          61,
+          47,
+          62,
+          93,
+          84,
+          111
+        ]
+      ],
+      "image": "Brats18_TCIA04_437_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA04_437_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          65,
+          39,
+          19,
+          112,
+          91,
+          70
+        ]
+      ],
+      "image": "Brats18_TCIA03_338_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA03_338_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          72,
+          50,
+          66,
+          122,
+          127,
+          135
+        ]
+      ],
+      "image": "Brats18_CBICA_ATD_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_ATD_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          116,
+          91,
+          83,
+          170,
+          175,
+          134
+        ]
+      ],
+      "image": "Brats18_TCIA02_455_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA02_455_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          111,
+          43,
+          34,
+          188,
+          170,
+          122
+        ]
+      ],
+      "image": "Brats18_TCIA02_491_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA02_491_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          77,
+          59,
+          55,
+          140,
+          140,
+          116
+        ]
+      ],
+      "image": "Brats18_CBICA_ALX_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_ALX_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          61,
+          95,
+          75,
+          108,
+          157,
+          123
+        ]
+      ],
+      "image": "Brats18_2013_29_1_LGG.nii.gz",
+      "seg_label": "Brats18_2013_29_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          58,
+          30,
+          36,
+          135,
+          121,
+          109
+        ]
+      ],
+      "image": "Brats18_TCIA03_296_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA03_296_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          142,
+          75,
+          42,
+          175,
+          127,
+          68
+        ]
+      ],
+      "image": "Brats18_2013_1_1_LGG.nii.gz",
+      "seg_label": "Brats18_2013_1_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          121,
+          48,
+          31,
+          189,
+          159,
+          101
+        ]
+      ],
+      "image": "Brats18_CBICA_AQT_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AQT_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          121,
+          66,
+          68,
+          177,
+          136,
+          123
+        ]
+      ],
+      "image": "Brats18_TCIA09_312_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA09_312_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          127,
+          34,
+          41,
+          184,
+          133,
+          121
+        ]
+      ],
+      "image": "Brats18_TCIA06_603_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA06_603_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          55,
+          72,
+          25,
+          105,
+          155,
+          73
+        ]
+      ],
+      "image": "Brats18_TCIA08_280_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA08_280_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          62,
+          54,
+          41,
+          106,
+          114,
+          91
+        ]
+      ],
+      "image": "Brats18_TCIA08_319_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA08_319_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          64,
+          46,
+          79,
+          122,
+          94,
+          129
+        ]
+      ],
+      "image": "Brats18_CBICA_ABB_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_ABB_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          106,
+          72,
+          35,
+          180,
+          174,
+          115
+        ]
+      ],
+      "image": "Brats18_TCIA10_175_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_175_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          56,
+          64,
+          37,
+          103,
+          130,
+          91
+        ]
+      ],
+      "image": "Brats18_TCIA01_150_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA01_150_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          57,
+          59,
+          32,
+          127,
+          154,
+          96
+        ]
+      ],
+      "image": "Brats18_TCIA10_241_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_241_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          100,
+          95,
+          55,
+          172,
+          178,
+          136
+        ]
+      ],
+      "image": "Brats18_TCIA01_180_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA01_180_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          94,
+          84,
+          61,
+          174,
+          176,
+          142
+        ]
+      ],
+      "image": "Brats18_CBICA_AUN_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AUN_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          66,
+          84,
+          91,
+          112,
+          139,
+          129
+        ]
+      ],
+      "image": "Brats18_TCIA10_640_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_640_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          117,
+          60,
+          28,
+          186,
+          156,
+          105
+        ]
+      ],
+      "image": "Brats18_TCIA02_290_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA02_290_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          125,
+          81,
+          67,
+          184,
+          161,
+          134
+        ]
+      ],
+      "image": "Brats18_CBICA_AQO_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AQO_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          122,
+          37,
+          44,
+          178,
+          104,
+          86
+        ]
+      ],
+      "image": "Brats18_CBICA_AYU_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AYU_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          59,
+          39,
+          23,
+          154,
+          152,
+          117
+        ]
+      ],
+      "image": "Brats18_TCIA01_147_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA01_147_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          87,
+          91,
+          55,
+          169,
+          197,
+          133
+        ]
+      ],
+      "image": "Brats18_TCIA10_393_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_393_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          60,
+          77,
+          47,
+          142,
+          185,
+          131
+        ]
+      ],
+      "image": "Brats18_TCIA10_103_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_103_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          78,
+          85,
+          30,
+          181,
+          197,
+          131
+        ]
+      ],
+      "image": "Brats18_TCIA13_633_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA13_633_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          71,
+          80,
+          51,
+          143,
+          195,
+          134
+        ]
+      ],
+      "image": "Brats18_TCIA10_282_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_282_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          123,
+          61,
+          53,
+          183,
+          151,
+          138
+        ]
+      ],
+      "image": "Brats18_CBICA_ASO_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_ASO_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          67,
+          92,
+          33,
+          119,
+          155,
+          86
+        ]
+      ],
+      "image": "Brats18_CBICA_ATP_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_ATP_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          57,
+          54,
+          61,
+          108,
+          102,
+          112
+        ]
+      ],
+      "image": "Brats18_TCIA02_208_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA02_208_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          121,
+          41,
+          68,
+          169,
+          111,
+          128
+        ]
+      ],
+      "image": "Brats18_TCIA02_135_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA02_135_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          48,
+          56,
+          42,
+          107,
+          124,
+          114
+        ]
+      ],
+      "image": "Brats18_CBICA_ALN_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_ALN_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          103,
+          33,
+          35,
+          181,
+          133,
+          117
+        ]
+      ],
+      "image": "Brats18_TCIA02_118_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA02_118_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          54,
+          82,
+          48,
+          119,
+          140,
+          87
+        ]
+      ],
+      "image": "Brats18_CBICA_AVG_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AVG_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          123,
+          46,
+          35,
+          189,
+          158,
+          107
+        ]
+      ],
+      "image": "Brats18_TCIA08_205_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA08_205_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          76,
+          38,
+          55,
+          139,
+          144,
+          136
+        ]
+      ],
+      "image": "Brats18_CBICA_AQJ_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AQJ_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          109,
+          67,
+          58,
+          185,
+          182,
+          134
+        ]
+      ],
+      "image": "Brats18_TCIA06_372_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA06_372_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          65,
+          48,
+          32,
+          105,
+          107,
+          74
+        ]
+      ],
+      "image": "Brats18_CBICA_AQA_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AQA_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          118,
+          48,
+          32,
+          177,
+          136,
+          96
+        ]
+      ],
+      "image": "Brats18_TCIA13_645_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA13_645_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          62,
+          40,
+          53,
+          122,
+          132,
+          130
+        ]
+      ],
+      "image": "Brats18_TCIA08_242_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA08_242_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          115,
+          101,
+          67,
+          166,
+          165,
+          118
+        ]
+      ],
+      "image": "Brats18_TCIA01_186_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA01_186_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          70,
+          85,
+          67,
+          119,
+          164,
+          133
+        ]
+      ],
+      "image": "Brats18_TCIA04_192_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA04_192_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          130,
+          92,
+          42,
+          170,
+          151,
+          103
+        ]
+      ],
+      "image": "Brats18_TCIA09_451_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA09_451_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          62,
+          36,
+          47,
+          126,
+          123,
+          138
+        ]
+      ],
+      "image": "Brats18_CBICA_AVV_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AVV_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          58,
+          91,
+          23,
+          108,
+          158,
+          73
+        ]
+      ],
+      "image": "Brats18_TCIA02_394_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA02_394_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          66,
+          87,
+          39,
+          162,
+          182,
+          114
+        ]
+      ],
+      "image": "Brats18_TCIA01_203_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA01_203_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          91,
+          51,
+          49,
+          163,
+          145,
+          129
+        ]
+      ],
+      "image": "Brats18_TCIA01_429_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA01_429_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          120,
+          46,
+          62,
+          157,
+          111,
+          125
+        ]
+      ],
+      "image": "Brats18_CBICA_AXQ_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AXQ_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          115,
+          43,
+          57,
+          185,
+          139,
+          128
+        ]
+      ],
+      "image": "Brats18_TCIA01_378_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA01_378_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          74,
+          30,
+          58,
+          146,
+          110,
+          107
+        ]
+      ],
+      "image": "Brats18_TCIA03_265_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA03_265_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          69,
+          109,
+          46,
+          153,
+          184,
+          137
+        ]
+      ],
+      "image": "Brats18_CBICA_ASG_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_ASG_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          72,
+          93,
+          58,
+          136,
+          183,
+          122
+        ]
+      ],
+      "image": "Brats18_TCIA10_490_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_490_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          64,
+          31,
+          56,
+          115,
+          81,
+          107
+        ]
+      ],
+      "image": "Brats18_TCIA10_629_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_629_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          123,
+          110,
+          49,
+          181,
+          185,
+          121
+        ]
+      ],
+      "image": "Brats18_TCIA12_101_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA12_101_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          112,
+          112,
+          51,
+          174,
+          194,
+          123
+        ]
+      ],
+      "image": "Brats18_TCIA02_374_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA02_374_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          117,
+          37,
+          53,
+          186,
+          153,
+          127
+        ]
+      ],
+      "image": "Brats18_TCIA03_257_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA03_257_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          66,
+          90,
+          61,
+          117,
+          168,
+          128
+        ]
+      ],
+      "image": "Brats18_TCIA01_231_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA01_231_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          96,
+          87,
+          52,
+          175,
+          190,
+          125
+        ]
+      ],
+      "image": "Brats18_2013_12_1_HGG.nii.gz",
+      "seg_label": "Brats18_2013_12_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          118,
+          81,
+          26,
+          183,
+          157,
+          81
+        ]
+      ],
+      "image": "Brats18_CBICA_ARW_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_ARW_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          89,
+          101,
+          57,
+          179,
+          185,
+          137
+        ]
+      ],
+      "image": "Brats18_TCIA09_141_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA09_141_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          139,
+          101,
+          102,
+          163,
+          127,
+          130
+        ]
+      ],
+      "image": "Brats18_CBICA_AYI_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AYI_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          61,
+          88,
+          32,
+          130,
+          177,
+          109
+        ]
+      ],
+      "image": "Brats18_TCIA13_634_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA13_634_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          108,
+          121,
+          51,
+          154,
+          195,
+          106
+        ]
+      ],
+      "image": "Brats18_TCIA10_276_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_276_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          91,
+          59,
+          39,
+          183,
+          120,
+          126
+        ]
+      ],
+      "image": "Brats18_TCIA10_449_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_449_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          56,
+          100,
+          32,
+          108,
+          154,
+          80
+        ]
+      ],
+      "image": "Brats18_CBICA_ANZ_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_ANZ_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          109,
+          99,
+          59,
+          179,
+          200,
+          128
+        ]
+      ],
+      "image": "Brats18_TCIA13_654_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA13_654_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          68,
+          70,
+          37,
+          182,
+          194,
+          127
+        ]
+      ],
+      "image": "Brats18_TCIA10_410_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_410_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          53,
+          30,
+          35,
+          107,
+          115,
+          99
+        ]
+      ],
+      "image": "Brats18_TCIA04_328_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA04_328_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          124,
+          49,
+          46,
+          187,
+          135,
+          126
+        ]
+      ],
+      "image": "Brats18_CBICA_ASV_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_ASV_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          92,
+          95,
+          66,
+          166,
+          197,
+          134
+        ]
+      ],
+      "image": "Brats18_TCIA10_325_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_325_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          118,
+          65,
+          23,
+          175,
+          158,
+          120
+        ]
+      ],
+      "image": "Brats18_CBICA_AUR_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AUR_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          50,
+          49,
+          40,
+          113,
+          127,
+          100
+        ]
+      ],
+      "image": "Brats18_CBICA_ASY_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_ASY_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          57,
+          85,
+          26,
+          110,
+          156,
+          75
+        ]
+      ],
+      "image": "Brats18_CBICA_ASH_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_ASH_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          55,
+          67,
+          38,
+          112,
+          146,
+          97
+        ]
+      ],
+      "image": "Brats18_TCIA02_300_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA02_300_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          130,
+          76,
+          31,
+          186,
+          156,
+          79
+        ]
+      ],
+      "image": "Brats18_TCIA02_607_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA02_607_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          131,
+          78,
+          23,
+          185,
+          157,
+          81
+        ]
+      ],
+      "image": "Brats18_TCIA10_307_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_307_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          102,
+          77,
+          49,
+          148,
+          148,
+          93
+        ]
+      ],
+      "image": "Brats18_CBICA_AZD_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AZD_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          120,
+          39,
+          31,
+          166,
+          140,
+          84
+        ]
+      ],
+      "image": "Brats18_CBICA_AYA_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AYA_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          66,
+          74,
+          35,
+          131,
+          152,
+          94
+        ]
+      ],
+      "image": "Brats18_TCIA01_448_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA01_448_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          123,
+          36,
+          48,
+          185,
+          140,
+          125
+        ]
+      ],
+      "image": "Brats18_TCIA01_412_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA01_412_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          54,
+          73,
+          56,
+          113,
+          146,
+          122
+        ]
+      ],
+      "image": "Brats18_TCIA10_346_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_346_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          69,
+          35,
+          48,
+          122,
+          144,
+          129
+        ]
+      ],
+      "image": "Brats18_CBICA_AXN_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AXN_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          93,
+          89,
+          39,
+          182,
+          183,
+          120
+        ]
+      ],
+      "image": "Brats18_TCIA12_480_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA12_480_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          131,
+          71,
+          30,
+          183,
+          155,
+          90
+        ]
+      ],
+      "image": "Brats18_TCIA04_111_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA04_111_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          52,
+          87,
+          25,
+          111,
+          161,
+          85
+        ]
+      ],
+      "image": "Brats18_TCIA08_406_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA08_406_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          72,
+          27,
+          52,
+          123,
+          92,
+          127
+        ]
+      ],
+      "image": "Brats18_CBICA_ASK_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_ASK_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          54,
+          50,
+          29,
+          126,
+          155,
+          100
+        ]
+      ],
+      "image": "Brats18_TCIA02_471_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA02_471_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          128,
+          49,
+          34,
+          182,
+          142,
+          110
+        ]
+      ],
+      "image": "Brats18_CBICA_ASW_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_ASW_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          59,
+          57,
+          35,
+          110,
+          131,
+          92
+        ]
+      ],
+      "image": "Brats18_TCIA03_375_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA03_375_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          80,
+          68,
+          43,
+          137,
+          155,
+          128
+        ]
+      ],
+      "image": "Brats18_TCIA01_460_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA01_460_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          112,
+          92,
+          30,
+          173,
+          157,
+          94
+        ]
+      ],
+      "image": "Brats18_TCIA10_152_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_152_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          134,
+          146,
+          61,
+          174,
+          186,
+          93
+        ]
+      ],
+      "image": "Brats18_2013_8_1_LGG.nii.gz",
+      "seg_label": "Brats18_2013_8_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          53,
+          51,
+          31,
+          122,
+          150,
+          97
+        ]
+      ],
+      "image": "Brats18_CBICA_ATF_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_ATF_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          139,
+          97,
+          46,
+          178,
+          157,
+          112
+        ]
+      ],
+      "image": "Brats18_CBICA_BHM_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_BHM_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          76,
+          38,
+          67,
+          122,
+          100,
+          127
+        ]
+      ],
+      "image": "Brats18_2013_5_1_HGG.nii.gz",
+      "seg_label": "Brats18_2013_5_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          53,
+          46,
+          29,
+          104,
+          133,
+          88
+        ]
+      ],
+      "image": "Brats18_TCIA01_235_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA01_235_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          46,
+          42,
+          28,
+          126,
+          165,
+          107
+        ]
+      ],
+      "image": "Brats18_2013_22_1_HGG.nii.gz",
+      "seg_label": "Brats18_2013_22_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          54,
+          65,
+          48,
+          105,
+          143,
+          104
+        ]
+      ],
+      "image": "Brats18_2013_16_1_LGG.nii.gz",
+      "seg_label": "Brats18_2013_16_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          60,
+          95,
+          54,
+          149,
+          192,
+          133
+        ]
+      ],
+      "image": "Brats18_2013_6_1_LGG.nii.gz",
+      "seg_label": "Brats18_2013_6_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          75,
+          88,
+          55,
+          140,
+          152,
+          131
+        ]
+      ],
+      "image": "Brats18_CBICA_AOO_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AOO_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          68,
+          106,
+          61,
+          134,
+          190,
+          134
+        ]
+      ],
+      "image": "Brats18_TCIA10_387_1_LGG.nii.gz",
+      "seg_label": "Brats18_TCIA10_387_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    },
+    {
+      "box": [
+        [
+          89,
+          82,
+          93,
+          120,
+          137,
+          139
+        ]
+      ],
+      "image": "Brats18_CBICA_AQN_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AQN_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          61,
+          94,
+          58,
+          132,
+          181,
+          131
+        ]
+      ],
+      "image": "Brats18_TCIA01_201_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA01_201_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          99,
+          98,
+          47,
+          171,
+          196,
+          131
+        ]
+      ],
+      "image": "Brats18_CBICA_AQG_1_HGG.nii.gz",
+      "seg_label": "Brats18_CBICA_AQG_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          54,
+          78,
+          46,
+          121,
+          156,
+          127
+        ]
+      ],
+      "image": "Brats18_TCIA02_309_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA02_309_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          124,
+          69,
+          39,
+          183,
+          149,
+          98
+        ]
+      ],
+      "image": "Brats18_TCIA03_121_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA03_121_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          60,
+          95,
+          59,
+          110,
+          161,
+          114
+        ]
+      ],
+      "image": "Brats18_TCIA08_218_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA08_218_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          67,
+          86,
+          64,
+          151,
+          188,
+          137
+        ]
+      ],
+      "image": "Brats18_TCIA02_606_1_HGG.nii.gz",
+      "seg_label": "Brats18_TCIA02_606_1_HGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        1
+      ]
+    },
+    {
+      "box": [
+        [
+          82,
+          142,
+          70,
+          120,
+          190,
+          113
+        ]
+      ],
+      "image": "Brats18_2013_9_1_LGG.nii.gz",
+      "seg_label": "Brats18_2013_9_1_LGG.nii.gz",
+      "box_label": [
+        0
+      ],
+      "cls_label": [
+        0
+      ]
+    }
+  ]
+}

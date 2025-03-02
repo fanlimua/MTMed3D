@@ -412,7 +412,7 @@ class Trainer(object):
                 acc, sensitivity, specificity = sensitivity_specificity(all_preds, all_labels) 
                 print(f"{epoch_index} - Acc: {acc} - Sen: {sensitivity} - Spe: {specificity}")
 
-            return cls_val_loss, val_acc, sensitivity, specificity
+            return cls_val_loss, acc, sensitivity, specificity
         
         else:
             with torch.no_grad():
@@ -539,7 +539,7 @@ class Trainer(object):
                 val_result['hd_tc'] = hd95_tc
                 val_result['hd_wt'] = hd95_wt
                 val_result['hd_et'] = hd95_et
-                val_result['cl_acc'] = val_cl_acc
+                val_result['cl_acc'] = acc
                 val_result['sensitivity'] = sensitivity
                 val_result['specificity'] = specificity
                 val_result['val_det_epoch_metric_dict'] = val_det_epoch_metric_dict

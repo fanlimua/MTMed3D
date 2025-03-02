@@ -133,7 +133,7 @@ if __name__ == '__main__':
     parser.add_argument('--image_size', type=int, default=96)
 
     # training hyper-parameters
-    parser.add_argument('--json_file', type=str, default='../Medical-image-analysis/utils/data_annotation.json')
+    parser.add_argument('--json_file', type=str, default='utils/data_annotation.json')
     parser.add_argument('--data_dir', type=str, default='../dataset/BraTS/imageTr2018')
     parser.add_argument('--seg_label_dir', type=str, default='../dataset/BraTS/labelTr2018')
     parser.add_argument('--num_epochs', type=int, default=20)
