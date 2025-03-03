@@ -832,14 +832,13 @@ class Trainer(object):
                 det_val_epoch_metric = sum(det_val_epoch_metric) / len(det_val_epoch_metric)
                 det_val_metric.append(det_val_epoch_metric)
 
-                acc_value = cl_acc[epoch]/100
-                val_epoch_metric = (det_val_metric[epoch] + seg_epoch_metric[epoch] + acc_value)/3
+                val_epoch_metric = (det_val_metric[epoch] + seg_epoch_metric[epoch] + cl_acc[epoch])/3
                 # if val_epoch_metric > best_val_metric and val_epoch_metric > 0.75:
                 if val_epoch_metric > best_val_metric and val_epoch_metric > 0.6:
                     best_val_metric = val_epoch_metric
                     best_net = self.model.state_dict()
                     self.multiswin_path = os.path.join(self.root_dir, '%d-s%.4f-d%.4f-c%.4f-%.4f.pkl' % (
-                        epoch+1, seg_epoch_metric[epoch], det_val_metric[epoch], acc_value, val_epoch_metric))
+                        epoch+1, seg_epoch_metric[epoch], det_val_metric[epoch], cl_acc[epoch], val_epoch_metric))
                     torch.save(best_net, self.multiswin_path)
                     print(
                         "Model Was Saved ! Current Best Avg. Metric: {} Current Avg. Metric:{}\n".format(best_val_metric, val_epoch_metric)
