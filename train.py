@@ -195,7 +195,6 @@ class Trainer(object):
             return cls_train_loss
 
         else:
-            self.task_manager.multi_setting(self.model, "init", self.multi_opt)
             for batch_data in train_loader:
                 step += 1
                 inputs, seg_labels = batch_data["image"].to(device), batch_data["seg_label"].to(device)
