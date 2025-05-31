@@ -20,6 +20,8 @@ from ptflops import get_model_complexity_info
 from lib.task_manager import *
 from model.network import MultiSwin
 from timm.utils import accuracy
+import pandas as pd
+from openpyxl import load_workbook
 
 
 def load_data_indices(full_data, index):
@@ -148,7 +150,7 @@ def load_pre_trained_weights(root_dir, fold_name, model):
             model.det_decoder.load_state_dict(det_dec_weights)
             print("MultiSwin Det Decoder has been loaded successfully.")
 
-def multi_testing(root_dir, result_dir, test_loader, fold_name, model, task_manager, multi_opt):
+def multi_testing(root_dir, result_dir, test_loader, fold_name, model, task_manager, multi_opt, iou_list=[0.1, 0.5]):
 
     # Load pre-trained models
     load_pre_trained_weights(root_dir, fold_name, model)
@@ -158,7 +160,7 @@ def multi_testing(root_dir, result_dir, test_loader, fold_name, model, task_mana
     dice_metric = DiceMetric(include_background=True, reduction="mean_batch")
     hd95_metric = HausdorffDistanceMetric(include_background=True, percentile=95, reduction="mean")
     hd95_metric_batch = HausdorffDistanceMetric(include_background=True, percentile=95, reduction="mean_batch")
-    det_metric = COCOMetric(classes=["tumor"], iou_list=[0.1], max_detection=[10]) 
+    det_metric = COCOMetric(classes=["tumor"], iou_list=iou_list, max_detection=[20]) 
     
     results_dict = {"validation": []}
     model.eval()
@@ -274,15 +276,29 @@ def multi_testing(root_dir, result_dir, test_loader, fold_name, model, task_mana
         # del inference_inputs
         # update inference_data for post transform
         val_det_epoch_metric_dict = det_metric(results_metric)[0]
-        mAP_IoU = val_det_epoch_metric_dict['mAP_IoU_0.10_0.50_0.05_MaxDet_10']
-        mAR_IoU = val_det_epoch_metric_dict['mAR_IoU_0.10_0.50_0.05_MaxDet_10']
+        mAP_IoU = val_det_epoch_metric_dict.get('mAP_IoU_0.10_0.50_0.05_MaxDet_10')
+        mAR_IoU = val_det_epoch_metric_dict.get('mAR_IoU_0.10_0.50_0.05_MaxDet_10')
+        
+        if mAP_IoU is None:
+            for key in val_det_epoch_metric_dict:
+                if key.startswith("mAP_IoU_") and not key.startswith("tumor_"):
+                    mAP_IoU = val_det_epoch_metric_dict[key]
+                    break
+
+        if mAR_IoU is None:
+            for key in val_det_epoch_metric_dict:
+                if key.startswith("mAR_IoU_") and not key.startswith("tumor_"):
+                    mAR_IoU = val_det_epoch_metric_dict[key]
+                    break
+                
         det_val_epoch_metric = val_det_epoch_metric_dict.values()
         det_val_epoch_metric = sum(det_val_epoch_metric) / len(det_val_epoch_metric)
         det_val_metric = det_val_epoch_metric
+        det_metric_list = [(key, round(value, 4)) for key, value in val_det_epoch_metric_dict.items()]
         
         data = [metric_wt, metric_tc, metric_et, hd95_wt, hd95_tc, hd95_et, acc, sensitivity, specificity, mAP_IoU, mAR_IoU]
         data_rounded = [[round(value, 4) for value in data]]  
-        return data_rounded
+        return data_rounded, det_metric_list
     
 def multi_vis(root_dir, result_dir, test_loader, fold_name, model, task_manager, multi_opt):
     # Metrics
@@ -682,11 +698,12 @@ def multi_vis(root_dir, result_dir, test_loader, fold_name, model, task_manager,
 if __name__ == "__main__":
     # Argument parser
     parser = argparse.ArgumentParser(description="Multi-task model testing.")
-    parser.add_argument('--json_file', type=str, default='../Medical-image-analysis/utils/data_annotation.json')
+    parser.add_argument('--json_file', type=str, default='./utils/data_annotation_2018.json')
     parser.add_argument('--data_dir', type=str, default='../dataset/BraTS/imageTr2018')
     parser.add_argument('--seg_label_dir', type=str, default='../dataset/BraTS/labelTr2018')
     parser.add_argument("--root_dir", type=str, default="../Medical-image-analysis/models/Dense_PANet_GradNorm", help="Directory containing model weights.")
     parser.add_argument("--result_dir", type=str, default="./result/test_multi", help="Directory for saving results.")
+    parser.add_argument("--iou_list", type=str, default=[0.1, 0.5], help="Comma-separated IoU thresholds")
     parser.add_argument("--mode", type=str, default="testing", help="'testing' for validating model performance metrics, or 'efficiency' for evaluating resource usage and runtime performance, or 'vis' for visulization.")
     parser.add_argument("--multi_opt", type=str, default="GradNorm", help="Traning Optimizer")
     args = parser.parse_args()
@@ -707,6 +724,7 @@ if __name__ == "__main__":
         kf = KFold(n_splits=5, shuffle=True, random_state=42)
         folds = kf.split(full_files)
         results = []
+        det_metric_list = []
         
         for i, (train_index, val_index) in enumerate(folds):
             fold_name = f"fold_{i+1}" 
@@ -730,17 +748,19 @@ if __name__ == "__main__":
             device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
             
             # Testing
-            data_rounded = multi_testing(
+            data_rounded, det_metrics = multi_testing(
                                 root_dir=args.root_dir,
                                 result_dir=args.result_dir,
                                 test_loader=val_loader,
                                 fold_name=fold_name,
                                 model = model,
                                 task_manager = task_manager,
-                                multi_opt = args.multi_opt
+                                multi_opt = args.multi_opt,
+                                iou_list=args.iou_list
                             )
             
             results.append(data_rounded)
+            det_metric_list.append(det_metrics)
         
         results = [item[0] for item in results]
         folds = [f"fold{fold}" for fold in range(1, len(results) + 1)]
@@ -753,6 +773,25 @@ if __name__ == "__main__":
 
         # Print the table using tabulate
         print(tabulate(results_with_folds, headers=headers, tablefmt="grid"))
+        
+        det_metrics_dicts = [dict(det) for det in det_metric_list]
+        metric_names = sorted({k for d in det_metrics_dicts for k in d})
+        transpose_table = []
+        for metric in metric_names:
+            row = [metric] + [round(det.get(metric, None), 4) for det in det_metrics_dicts]
+            transpose_table.append(row)
+        transpose_headers = ["Metric"] + [f"fold{i+1}" for i in range(len(det_metrics_dicts))]
+        print("\nDetection Metrics")
+        print(tabulate(transpose_table, headers=transpose_headers, tablefmt="grid"))
+        
+        df1 = pd.DataFrame(results_with_folds, columns=headers)
+        df2 = pd.DataFrame(transpose_table, columns=transpose_headers)
+        folder_name = os.path.basename(os.path.normpath(args.root_dir))
+        excel_filename = os.path.join("result/test_multi", f"{folder_name}_results.xlsx")
+        with pd.ExcelWriter(excel_filename, engine="openpyxl") as writer:
+            df1.to_excel(writer, index=False, sheet_name="Results", startrow=0)
+            df2.to_excel(writer, index=False, sheet_name="Results", startrow=len(df1) + 2)
+
     
     elif args.mode == "vis":
         kf = KFold(n_splits=5, shuffle=True, random_state=42)
