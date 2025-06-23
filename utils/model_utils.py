@@ -290,21 +290,21 @@ def wrap_validation_result(task, result):
 
         # Extract main metrics
         result_dict.update({
-            "Dice_WT": val_epoch_results.get("metric_wt"),
-            "Dice_TC": val_epoch_results.get("metric_tc"),
-            "Dice_EH": val_epoch_results.get("metric_et"),
-            "HD_WT": val_epoch_results.get("hd_wt"),
-            "HD_TC": val_epoch_results.get("hd_tc"),
-            "HD_ET": val_epoch_results.get("hd_et"),
-            "Accuracy": val_epoch_results.get("cl_acc"),
-            "Sen(pos)": val_epoch_results.get("sensitivity"),
-            "Spe(neg)": val_epoch_results.get("specificity")
+            "Dice_WT": round(val_epoch_results.get("metric_wt", 0), 4),
+            "Dice_TC": round(val_epoch_results.get("metric_tc", 0), 4),
+            "Dice_EH": round(val_epoch_results.get("metric_et", 0), 4),
+            "HD_WT": round(val_epoch_results.get("hd_wt", 0), 4),
+            "HD_TC": round(val_epoch_results.get("hd_tc", 0), 4),
+            "HD_ET": round(val_epoch_results.get("hd_et", 0), 4),
+            "Accuracy": round(val_epoch_results.get("cl_acc", 0), 4),
+            "Sen(pos)": round(val_epoch_results.get("sensitivity", 0), 4),
+            "Spe(neg)": round(val_epoch_results.get("specificity", 0), 4),
         })
 
         det_summary = val_epoch_results.get("val_det_epoch_metric_dict", {})
         result_dict.update({
-            "mAP_IoU": det_summary.get("mAP_IoU_0.10_0.50_0.05_MaxDet_10"),
-            "mAR_IoU": det_summary.get("mAR_IoU_0.10_0.50_0.05_MaxDet_10")
+            "mAP_IoU": round(det_summary.get("mAP_IoU_0.10_0.50_0.05_MaxDet_10", 0), 4),
+            "mAR_IoU": round(det_summary.get("mAR_IoU_0.10_0.50_0.05_MaxDet_10", 0), 4),
         })
 
     return result_dict, det_metric_dict
