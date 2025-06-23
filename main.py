@@ -100,10 +100,10 @@ def main(config):
                 solver.swin_train()
     else:
         # Create a single train-test split (80% train, 20% validation)
-        # train_files = full_files[:int(0.8 * len(full_files))]
-        # val_files = full_files[int(0.8 * len(full_files)):]
-        train_files = full_files[:int(0.1 * len(full_files))]
-        val_files = full_files[int(0.9 * len(full_files)):]
+        train_files = full_files[:int(0.8 * len(full_files))]
+        val_files = full_files[int(0.8 * len(full_files)):]
+        # train_files = full_files[:int(0.1 * len(full_files))]
+        # val_files = full_files[int(0.9 * len(full_files)):]
         train_ds = Dataset(
                 data=train_files,
                 transform=train_transforms,
@@ -133,15 +133,16 @@ if __name__ == '__main__':
     parser.add_argument('--image_size', type=int, default=96)
 
     # training hyper-parameters
-    parser.add_argument('--json_file', type=str, default='utils/data_annotation.json')
+    parser.add_argument('--json_file', type=str, default='utils/data_annotation_2018.json')
     parser.add_argument('--data_dir', type=str, default='../dataset/BraTS/imageTr2018')
     parser.add_argument('--seg_label_dir', type=str, default='../dataset/BraTS/labelTr2018')
-    parser.add_argument('--num_epochs', type=int, default=20)
+    parser.add_argument('--num_epochs', type=int, default=150)
     parser.add_argument('--num_epochs_decay', type=int, default=10)
     parser.add_argument('--batch_size', type=int, default=1)
     parser.add_argument('--num_workers', type=int, default=1)
     parser.add_argument('--mode', type=str, default='train')
     parser.add_argument('--task', type=str, default='multi', help="Specify the type of training. Options: segmentation(single-task), detection(single-task), classification(single-task), multi(multi-task).")
+    parser.add_argument("--iou_list", type=str, default=[0.1], help="Comma-separated IoU thresholds")
     parser.add_argument('--model_path', type=str, default='./models')
     parser.add_argument('--result_path', type=str, default='./result/')
     parser.add_argument('--cuda_idx', type=int, default=1)

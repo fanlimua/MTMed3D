@@ -30,11 +30,12 @@ class Trainer(object):
         self.batch_size = config.batch_size
 
         # Path
-        self.model_path = config.model_path
+        # self.model_path = config.model_path
         self.result_path = config.result_path
         self.mode = config.mode
         self.task = config.task
         self.multi_opt = config.multi_opt
+        self.iou_list = config.iou_list
 
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         self.num_classes = 2
@@ -52,7 +53,7 @@ class Trainer(object):
         self.dice_metric = DiceMetric(include_background=True, reduction="mean_batch")
         self.hd95_metric = HausdorffDistanceMetric(include_background=True, percentile=95, reduction="mean")
         self.hd95_metric_batch = HausdorffDistanceMetric(include_background=True, percentile=95, reduction="mean_batch")
-        self.det_metric = COCOMetric(classes=["tumor"], iou_list=[0.1], max_detection=[10])
+        self.det_metric = COCOMetric(classes=["tumor"], iou_list=self.iou_list, max_detection=[10])
 
     def print_network(self, model, name):
         """Print out the network information."""
@@ -109,8 +110,8 @@ class Trainer(object):
 
     # ====================================== Training ===========================================#
 
-    def train_one_epoch(self, epoch_index, train_loader, device):
-        self.model.train()
+    def train_one_epoch(self, model, task, epoch_index, train_loader, device):
+        model.train()
         total_loss_all = 0
         seg_epoch_loss = 0
         det_epoch_loss = 0
@@ -120,14 +121,14 @@ class Trainer(object):
         epoch_box_reg_loss = 0
         step = 0
         
-        if self.task == "segmentation":
-            self.task_manager.seg_setting(self.model, action = "init")
+        if task == "segmentation":
+            self.task_manager.seg_setting(model, action = "init")
             for batch_data in train_loader:
                 step += 1
                 inputs, labels = batch_data["image"].to(device), batch_data["seg_label"].to(device)
                 
                 seg_loss = self.task_manager.seg_setting(
-                    self.model, 
+                    model, 
                     "execute",
                     inputs, 
                     labels
@@ -142,8 +143,8 @@ class Trainer(object):
             seg_epoch_loss /= step
             return seg_epoch_loss
         
-        elif self.task == "detection":
-            self.task_manager.det_setting(self.model, action = "init")
+        elif task == "detection":
+            self.task_manager.det_setting(model, action = "init")
             for batch_data in train_loader:
                 step += 1
                 inputs = batch_data["image"].to(device) 
@@ -154,7 +155,7 @@ class Trainer(object):
                         ]
                 
                 det_loss, det_losses = self.task_manager.det_setting(
-                    self.model, 
+                    model, 
                     "execute",
                     inputs, 
                     targets
@@ -172,8 +173,8 @@ class Trainer(object):
             epoch_box_reg_loss /= step
             return det_epoch_loss, epoch_cls_loss, epoch_box_reg_loss
         
-        elif self.task == "classification":
-            self.task_manager.cls_setting(self.model, action = "init")
+        elif task == "classification":
+            self.task_manager.cls_setting(model, action = "init")
             loss_meter = AverageMeter()
             cls_train_loss = 0
             for batch_data in train_loader:
@@ -183,7 +184,7 @@ class Trainer(object):
                 cl_label = torch.nn.functional.one_hot(torch.as_tensor(cl_label), num_classes=2).float()
                 
                 cls_loss = self.task_manager.cls_setting(
-                    self.model, 
+                    model, 
                     "execute",
                     inputs, 
                     cl_label
@@ -207,7 +208,7 @@ class Trainer(object):
                 cl_label = torch.nn.functional.one_hot(torch.as_tensor(cl_label), num_classes=2).float()
                 
                 total_loss, seg_loss, cls_loss, det_loss = self.task_manager.multi_setting(
-                    self.model, 
+                    model, 
                     "execute",
                     self.multi_opt,
                     inputs, 
@@ -250,15 +251,15 @@ class Trainer(object):
             return total_loss_all, seg_epoch_loss, cl_epoch_loss, det_epoch_loss
                 
 
-    def validate(self, epoch_index, validation_loader, device):
-        self.model.eval()
+    def validate(self, model, task, epoch_index, validation_loader, device):
+        model.eval()
         det_val_outputs_all = []
         det_val_targets_all = []
         val_epoch_loss = 0
         val_epoch_cls_loss = 0
         val_epoch_box_reg_loss = 0
         
-        if self.task == "segmentation":
+        if task == "segmentation":
             with torch.no_grad():
                 step = 0
                 epoch_loss = 0
@@ -269,7 +270,7 @@ class Trainer(object):
                     
                     # No Sliding Window
                     seg_loss, seg_outputs = self.task_manager.seg_setting(
-                        self.model, 
+                        model, 
                         "execute",
                         val_images, 
                         val_labels
@@ -310,7 +311,7 @@ class Trainer(object):
                 epoch_loss /= step
             return epoch_loss, metric_mean, metric_tc, metric_wt, metric_et, hd95_metric_mean, hd95_tc, hd95_wt, hd95_et
         
-        elif self.task == "detection":
+        elif task == "detection":
             with torch.no_grad():
                 epoch_loss = 0
                 step = 0
@@ -324,7 +325,7 @@ class Trainer(object):
                             ]
 
                     det_outputs, det_loss, det_losses = self.task_manager.det_setting(
-                        self.model, 
+                        model, 
                         "execute",
                         inputs, 
                         targets
@@ -364,7 +365,7 @@ class Trainer(object):
 
             return val_epoch_loss, val_epoch_cls_loss, val_epoch_box_reg_loss, val_epoch_metric_dict
         
-        elif self.task == "classification":
+        elif task == "classification":
             cls_val_loss = 0
             val_acc = 0
             all_labels = []
@@ -379,7 +380,7 @@ class Trainer(object):
                     
                     # No sliding windows
                     cls_loss, cls_outputs = self.task_manager.cls_setting(
-                        self.model, 
+                        model, 
                         "execute",
                         inputs, 
                         cl_label_one_hot
@@ -426,6 +427,10 @@ class Trainer(object):
                 all_labels = []
                 all_preds = []
                 
+                # 检查并初始化 task_manager（如果还没有初始化）
+                if self.task_manager.seg_loss is None:
+                    self.task_manager.multi_setting(model, "init", self.multi_opt)
+                
                 for val_data in validation_loader:
                     step += 1
                     val_images, seg_labels = val_data["image"].to(device), val_data["seg_label"].to(device)
@@ -438,7 +443,7 @@ class Trainer(object):
                     cl_labels_one_hot = torch.nn.functional.one_hot(torch.as_tensor(cl_labels), num_classes=2).float()
 
                     seg_loss, cls_loss, det_loss, seg_outputs, cls_outputs, det_outputs = self.task_manager.multi_setting(
-                        self.model, 
+                        model, 
                         "execute",
                         self.multi_opt,
                         val_images, 
@@ -542,8 +547,9 @@ class Trainer(object):
                 val_result['sensitivity'] = sensitivity
                 val_result['specificity'] = specificity
                 val_result['val_det_epoch_metric_dict'] = val_det_epoch_metric_dict
+                det_metric_list = [(key, round(value, 4)) for key, value in val_det_epoch_metric_dict.items()]
 
-                return val_result
+                return val_result, det_metric_list
 
 
     def swin_train(self):
@@ -566,8 +572,8 @@ class Trainer(object):
             print(f"Traing set: {len(self.train_loader.dataset.data)}; Validation set: {len(self.valid_loader.dataset.data)}")
 
             for epoch in range(num_epochs):
-                train_loss = self.train_one_epoch(epoch, self.train_loader, self.device)
-                val_loss, val_metric, metric_tc, metric_wt, metric_et, hd95_metric_mean, hd95_tc, hd95_wt, hd95_et = self.validate(epoch, self.valid_loader, self.device)
+                train_loss = self.train_one_epoch(self.model, self.task, epoch, self.train_loader, self.device)
+                val_loss, val_metric, metric_tc, metric_wt, metric_et, hd95_metric_mean, hd95_tc, hd95_wt, hd95_et = self.validate(self.model, self.task, epoch, self.valid_loader, self.device)
                         
                 train_loss_array.append(train_loss)
                 val_loss_array.append(val_loss)
@@ -646,8 +652,8 @@ class Trainer(object):
             print(f"Traing set: {len(self.train_loader.dataset.data)}; Validation set: {len(self.valid_loader.dataset.data)}")
 
             for epoch in range(num_epochs):
-                det_epoch_loss, epoch_cls_loss, epoch_box_reg_loss = self.train_one_epoch(epoch, self.train_loader, self.device)
-                val_epoch_loss, val_epoch_cls_loss, val_epoch_box_reg_loss, val_epoch_metric_dict = self.validate(epoch, self.valid_loader, self.device)
+                det_epoch_loss, epoch_cls_loss, epoch_box_reg_loss = self.train_one_epoch(self.model, self.task, epoch, self.train_loader, self.device)
+                val_epoch_loss, val_epoch_cls_loss, val_epoch_box_reg_loss, val_epoch_metric_dict = self.validate(self.model, self.task, epoch, self.valid_loader, self.device)
 
                 val_map = val_epoch_metric_dict['mAP_IoU_0.10_0.50_0.05_MaxDet_10']
                 val_mar = val_epoch_metric_dict['mAR_IoU_0.10_0.50_0.05_MaxDet_10']
@@ -717,8 +723,8 @@ class Trainer(object):
             c = open(os.path.join(self.root_dir, 'cls_loss_acc.txt'), 'a+')
 
             for epoch in range(num_epochs):
-                cls_train_loss = self.train_one_epoch(epoch, self.train_loader, self.device)
-                cls_val_loss, val_acc, sensitivity, specificity = self.validate(epoch, self.valid_loader, self.device)
+                cls_train_loss = self.train_one_epoch(self.model, self.task, epoch, self.train_loader, self.device)
+                cls_val_loss, val_acc, sensitivity, specificity = self.validate(self.model, self.task, epoch, self.valid_loader, self.device)
                 
                 train_cls_loss.append(cls_train_loss)
                 val_cls_loss.append(cls_val_loss)
@@ -798,9 +804,9 @@ class Trainer(object):
             
             self.task_manager.multi_setting(self.model, "init", self.multi_opt)
             for epoch in range(num_epochs):
-                total_loss, seg_epoch_loss, cl_epoch_loss, det_epoch_loss = self.train_one_epoch(epoch, self.train_loader, self.device)
+                total_loss, seg_epoch_loss, cl_epoch_loss, det_epoch_loss = self.train_one_epoch(self.model, self.task, epoch, self.train_loader, self.device)
                 # total_loss, seg_epoch_loss, det_epoch_loss, cl_epoch_loss = 0,0,0,0
-                val_epoch_results = self.validate(epoch, self.valid_loader, self.device)
+                val_epoch_results, det_metric_list = self.validate(self.model, self.task, epoch, self.valid_loader, self.device)
                 # det_epoch_loss, epoch_cls_loss, epoch_box_reg_loss = 0, 0, 0
                 
                 train_total_loss.append(total_loss)

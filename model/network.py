@@ -695,7 +695,10 @@ class MultiSwin(nn.Module):
         if feature_size % 12 != 0:
             raise ValueError("feature_size should be divisible by 12.")
 
-        self.normalize = normalize
+        self.normalize = normalize       
+        self.seg_decoder = None
+        self.cls_decoder = None
+        self.det_decoder = None
 
         self.encoder = SwinTransformer(
             in_chans=in_channels,
@@ -715,18 +718,27 @@ class MultiSwin(nn.Module):
             downsample=downsample,
             use_v2=use_v2,
         )
-        self.seg_decoder = SegmentationDecoder(
-            img_size=(96, 96, 96),
-            in_channels=4,
-            out_channels=3,
-            feature_size=48,
-            drop_rate=0.0,
-            attn_drop_rate=0.0,
-            dropout_path_rate=0.0,
-            use_checkpoint=use_checkpoint,
-        )
-        self.cls_decoder = ClassificationDecoder()
-        self.det_decoder = DetectionDecoder()
+        
+    def build_seg_decoder(self):
+        if self.seg_decoder is None:
+            self.seg_decoder = SegmentationDecoder(
+                img_size=(96, 96, 96),
+                in_channels=4,
+                out_channels=3,
+                feature_size=48,
+                drop_rate=0.0,
+                attn_drop_rate=0.0,
+                dropout_path_rate=0.0,
+                use_checkpoint=False,
+            )
+
+    def build_cls_decoder(self):
+        if self.cls_decoder is None:
+            self.cls_decoder = ClassificationDecoder()
+
+    def build_det_decoder(self):
+        if self.det_decoder is None:
+            self.det_decoder = DetectionDecoder()
 
     def forward(self, x, task=None):
         # Swin Transformer based Encoder
@@ -734,14 +746,23 @@ class MultiSwin(nn.Module):
 
         # Single Task
         if task == "segmentation":
+            self.build_seg_decoder()
             return self.seg_decoder(shared_features, x)
+
         elif task == "classification":
+            self.build_seg_decoder()
+            self.build_cls_decoder()    
             seg_output = self.seg_decoder(shared_features, x)
             return self.cls_decoder(seg_output)
+        
         elif task == "detection":
+            self.build_det_decoder()
             return self.det_decoder(shared_features)
         # Multi Task
         else:
+            self.build_seg_decoder()
+            self.build_cls_decoder()
+            self.build_det_decoder()
             seg_output = self.seg_decoder(shared_features, x)
             cls_output = self.cls_decoder(seg_output)
             det_output = self.det_decoder(shared_features)
