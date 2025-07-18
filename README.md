@@ -1,5 +1,5 @@
 # MTMed3D
-In this work, we propose **MTMed3D**, a novel **Multi-task** Transformer-based model to address the limitations of single-task models by jointly performing brain tumor detection, segmentation, and glioma grading classification. Our model utilizes a Swin Transformer backbone and employs hard parameter sharing, which involves sharing encoders across all tasks, followed by task-specific decoders for each task. The proposed framework is evaluated on the BraTS 2018 dataset, achieving promising results across all three tasks. Additionally, we compare the performance and efficiency of our multi-task model with that of single-task models. Our multi-task model demonstrates a significant reduction in computational costs and faster inference speed while maintaining comparable performance to the single-task models. The architecture of MultiSwin is illustrated below:
+In this work, we propose **MTMed3D**, a novel **M**ulti-task **T**ransformer-based model to address the limitations of single-task models by jointly performing brain tumor detection, segmentation, and glioma grading classification. Our model utilizes a Swin Transformer backbone and employs hard parameter sharing, which involves sharing encoders across all tasks, followed by task-specific decoders for each task. The proposed framework is evaluated on the BraTS 2018 and BraTS 2019 datasets, achieving promising results across all three tasks. Additionally, we compare the performance and efficiency of our multi-task model with that of single-task models. Our multi-task model demonstrates a significant reduction in computational costs and faster inference speed while maintaining comparable performance to the single-task models. The architecture of MTMed3D is illustrated below:
 ![MultiSwin Architecture](images/multiswin_architecture.png)
 
 ## Installation
@@ -44,11 +44,11 @@ The figure below illustrates the output of our MTMed3D model compared to the gro
 
 ## Citation
 ```
-@misc{Li_MultiSwin_A_Swin_2025,
+@misc{Li_MTMed3D_2025,
 author = {Li, Fan},
 month = feb,
 title = {{MTMed3D: A Multi-Task Transformer-Based Model for 3D Medical Imaging}},
-url = {https://github.com/fanlimua/MultiSwin.git},
+url = {https://github.com/fanlimua/MTMed3D.git},
 year = {2025}
 }
 ```
